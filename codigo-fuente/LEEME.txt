@@ -1,0 +1,1 @@
+Fuente sin imagenes ni musica (estan en las otras partes, en src/art y src/music con los mismos nombres originales: ver data.ts). Build: npm i react react-dom esbuild; node build.mjs

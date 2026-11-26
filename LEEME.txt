@@ -1,0 +1,14 @@
+AUREA - el museo de los enigmas (version autonoma, sin la banda del visor)
+
+Son ficheros estaticos: no necesita servidor propio ni base de datos.
+Hay que juntar las 3 partes en UNA carpeta (dentro de assets/ van las imagenes y la musica).
+
+1) Parte 1 (aurea-1-juego.zip): descomprimela. Te da index.html, main.js, main.css y assets/ con los cuadros.
+2) Partes 2 y 3 (aurea-2-musica.zip, aurea-3-musica.zip): descomprimelas y copia los .mp3 dentro de assets/.
+3) Servirlo:
+   - En local: en esa carpeta, ejecuta  python3 -m http.server 8000  y abre http://localhost:8000
+     (no abras index.html con doble clic: el navegador bloquea los modulos y la musica en file://).
+   - En hosting estatico: sube la carpeta tal cual a Netlify, Vercel, GitHub Pages, Cloudflare Pages, etc. (HTTPS).
+El progreso se guarda en el navegador (localStorage). Sin musica el juego funciona igual.
+Cuadros de dominio publico; musica y creditos dentro del juego (Creditos).
+El codigo fuente (React + TypeScript) esta en aurea-fuente.zip.
